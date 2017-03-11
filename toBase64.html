@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        
+        * {
+            margin: 0; 
+            padding: 0;
+            font-family: MicroSoft YaHei;
+            box-sizing: border-box;
+        }
+        *::-webkit-scrollbar{width:0.4rem;background-color:#F5F5F5}
+        *::-webkit-scrollbar-track{background-color:#F5F5F5;border-radius:3px}
+        *::-webkit-scrollbar-thumb{border-radius:3px;background-color:#f66}
+        ::selection{background-color:#f66;color:#fff}
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-size: 62.5%;
+        }
+        body {
+            padding-left: 10rem;
+            
+        }
+
+        #toBase64 {
+            height: 100%;
+            position: absolute;
+            left: 0;
+            width: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px dashed #ccc;
+        }
+        #toBase64.on {
+            border-color: #f66;
+        }
+        #result {
+            overflow: hidden;
+        }
+        #result li {
+            list-style: none;
+            margin: 1rem;
+        }
+        #result .pic {
+            width: 10rem;
+            height: 10rem;
+            float: left;
+            border: 1px dashed #ccc;
+            border-radius: 3px;
+            margin-right: 1rem;
+        }
+        #result .base64 {
+            height: 10rem;
+            overflow: hidden;
+            border: 1px dashed #ccc;
+            border-radius: 3px;
+            padding: 0.5rem;
+
+        }
+        #result .base64 textarea {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            border: 0;
+            resize: none;
+            outline: none;            
+        }
+
+    </style>
+    <div id="toBase64">文件拖放到这里</div>
+    <ul id="result"></ul>
+    <script>
+        let getZONE = document.querySelector('#toBase64')
+        // dragover有效
+        //     dragenter 无效
+        getZONE.addEventListener('dragover', (e) => {e.preventDefault(); getZONE.classList.add('on')})
+        getZONE.addEventListener('dragleave', (e) => getZONE.classList.remove('on'))
+        getZONE.addEventListener('drop', (e) => {
+            e.preventDefault()
+            for (var i = 0; i < e.dataTransfer.files.length; i++) {
+                let file = e.dataTransfer.files[i]
+                const fileReader = new FileReader()
+                fileReader.readAsDataURL(file)
+                fileReader.addEventListener('load', (e) => {
+                    let createLI = document.createElement('li')
+                    createLI.innerHTML =  `
+                            <div class="pic" style="background: url(${window.URL.createObjectURL(file)}) center / cover no-repeat;"></div>
+                            <div class="base64">
+                                <textarea name="" id="">${e.target.result}</textarea>
+                            </div>
+                    `
+                    document.querySelector('#result').appendChild(createLI)
+                })
+            }
+        })
+        
+        
+
+    </script>
+
+</body>
+</html>
+
+
+
+<!-- https://developer.mozilla.org/zh-CN/docs/Using_files_from_web_applications -->
