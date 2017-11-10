@@ -1,17 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>乌拉拉</title>
     <style>
-        *{margin:0;padding:0;color:#666;font-family:"Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",tahoma,arial,simsun,"\5B8B\4F53"}*::-webkit-scrollbar{width:0.4rem;background-color:#F5F5F5}*::-webkit-scrollbar-track{background-color:#F5F5F5;border-radius:3px}*::-webkit-scrollbar-thumb{border-radius:3px;background-color:#34A853}::selection{background-color:#34A853;color:#fff}html{font-size:62.5%}html,body{height:100%}a{text-decoration:none}a:hover{color:#34A853;text-decoration:none}header h1,section > h1,section > h2,article > h1{font-weight:normal}header{max-width:1024px;width:100%;margin:auto;margin-bottom:5rem;position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center}header h1{display:inline-block;vertical-align:top;font-size:1.2rem;background-color:#34A853;padding:1rem;border-radius:0 0 3px 3px;color:#fff}header h1 a{color:#fff}figure img{margin-bottom:1rem}figure p{color:#34A853;font-size:1.3rem;margin-bottom:2.5rem}.tac{text-align:center;width:100%;height:100%;display:flex;align-items:center;justify-content:center}article{padding:2rem 0 3rem 0;position:relative;margin:auto;margin-top:-1px;max-width:1024px}article:before{content:'';position:absolute;background-color:#34A853;width:5rem;height:1px;top:0;left:0}article:after{content:'';position:absolute;background-color:#34A853;width:5rem;height:1px;bottom:0;left:0}article h1{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAOVBMVEUAAAAzqFIwr1Azp1Myp1IzqFIwp1AwqlAzqFIzqFM0qFM0p1QzqVMzqVM0qVI0p1IyqFIzqFM0qFMApnj6AAAAEnRSTlMA8BCgYOAgMNCwv0BQX3+AcJCeDccoAAABjklEQVRIx52T0Y6CQBAEZVdUPFGc///YEy5YiXVhXPqRTTtd6fawX2Pd6yz3PnaaT7WLiOMe6881Fp3a8459/KlvznvvYlVtzFsDtSGP19XWCzmthrxCTqoBtZt6ISfV4D0PQs6qwTsFLX9TDbqUc6eWk2rwlgstf1MNquXwVMtJNcGxWwTIeTXo8fr+/tzn1XyukYeaV4O62fvQsDerod45UaDTZjX2FiIZ2dVQ7/w+BKqqZts76b/saqy6eJdZgrxVjRLOsxSyqvE0Fj39g8tXSXDrLI18BOb/aRyYpZHP4LjeRczSLZeaeOdZGlnRXS+zFLKj28ssjUz08DSYpZEd3VjM0m+OzjQ8SyMTXc/M0siOzjQ0QCE7OvVqlkJ2dLzMUsiJmKWRczFLI+fyLI1saZbtyMyyHdmzzJGHwmCakaO7MZhW5Nfz+3ipGbLNHFd0IdvMcUevmZnjjm5kmzlO9Lxl0RFdyMllohs5Zya6kS2dJXo+bJ8lupFt5qyi18Tss0QXsv9VSNE/kH8BI4Nikqp7eZcAAAAASUVORK5CYII=) left / 1.7rem no-repeat;padding-left:2.2rem;font-size:2.2rem;line-height:1;margin:1.5rem 0}article h1 a{color:#34A853}article h1 a:hover{color:#34A853;border-bottom:none}.text{line-height:3;font-size:1.3rem;margin-bottom:1.5rem}.time{margin-bottom:1.5rem}.time time{color:#ccc}.tag a{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAOVBMVEUAAABgYGBlZWVkZGRlZWVlZWVoaGhlZWVlZWVlZWVmZmZlZWVlZWVmZmZmZmZlZWVlZWVmZmZmZmZ6sBHQAAAAEnRSTlMAEPBAwNAgYG/ggD+wUKAwkH8FZY6MAAABaUlEQVRIx9VV25aDIAwkNMhlFW3+/2MXqecMYrzsvnWectKZZBoImq/A4BfmGJkXPzxgv6M0iIGu6XkjOmb3iWy+kARbGdNGIZ9rIhgdxKsHv0/61eFIqh2nFqNUujhS+GtencrsNAU5dD56VRRc+Aa4/TWghgaKIn6XsGIvT3UuhLZgFgldza5fEknNhERiP7OuI+1ahM0h8BJ5dSfYcqJYcycgEdc4yrcCM4oQuk0XgiNrgVYTwEfCOZp7gcFps0TU+akIIuETDY2At8iVCOPugPmxcB8VaALU1Sy9KlZLn4haS//90+nRWGeMFdfkShBwcAOaPbsaxj27fPyn653AwXYAg0UCFHUBdYAB/awSMdO4azkhoYHsYWUyNhBon8XlkDt/yobTxzXO+iMGfq+w72OhRc56U66fG9rl3lbg/4Cprs8Y5s1LYCmImI/+ualwbgtsInMF8oUJsCdzC5rSyAU5TWS+Ab9KpRlNF8N3PQAAAABJRU5ErkJggg==) left / 1.4rem no-repeat;padding-left:1.7rem;margin-right:2rem;line-height:1;text-transform:uppercase}.tag a:hover{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAP1BMVEUAAAAwr1A0qFMzqFI0p1Iwp1A0p1Iyp1IzqFI0qFMzqFIzqVMzp1MwqlAzqFMyqFIzqFMzqFMzqFM0qFI0qFNnmUPVAAAAFHRSTlMAEEDwwCCAYODP0FCgMLBwb6+Qj0rI8toAAAF0SURBVEjH1VXRksMgCJRK1CSmsVf+/1uPs5nBgGfTx+5LHboLWwTrvgJTfCKmhPiM0wV2SNQgFRjT80FcEJfXyeeBpPjKWA8KxFwDxfUB+OchnoMxcfABXTszJ9ttmsBVZujwOb50u7ItPQVw/jv869UqkPlOYL99nCM7+xm0DxJRPAU8+eGtbkxoE/J97SqnqheIQtMh7r/umaoIpxL74VBwI7qpG2w5ibx7JwBubeMovxW4OxFItXUgsKwf1g4E4iPIPbr3AiezgJQkz62iEJXXaWoEeJxmwqbdCr4ZKNQnxkAgeTuW+Cr31wmspc9/dLjU1k3aKmMyEuxycZMUuzYabrk2fPjReAfmqO1QCwR2gcwCWliG6DdF0T1Np5KrCiiANyuT6wYKzLP4o2PqAdXP9AKuo0hb/xETvlb4YBM96eBbRa5/N6D/HcS/wVrX51G2w0tBYiTVH5OwYp7rh3FpJXGhBhgt3WrWcEdGDiu4b8AvjFwbQ8OPzh0AAAAASUVORK5CYII=) left / 1.4rem no-repeat;border-bottom:none;color:#34A853}.loading{line-height:1;color:#999;position:relative;color:#34A853}.loading:before{content:'';width:1.2rem;height:1.2rem;position:absolute;left:-1.7rem;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAPFBMVEUAAAAwqlAzqFMyqFIwr1Azp1IzqFI0p1IzqVIyqFIwp1A0qVI0p1QzqFM0qFIzqFIzqFI0qFMzqFM0qFPHtw1ZAAAAE3RSTlMAMLBwEODvgFBfIH9A8MDQn8+Q+jSnnwAAAPFJREFUSMftlVcOxCAMROklhZS5/11XS5qC4jh87irvC6GxhY0ZxMtOl2DbGj2+qOcBEzLycQAWNKeTOpi8sMh0jF4BcFnks94aWnuonNli7VqCbOOF+jhHOJ9OGAfEmkolAH9dAtHLEba57hF1W2TtUsF68bs0sZU1+ugAjBX5HTOd0Z37rZFJZIAr0nlkLBmAYj4CmDepyplJANA3gkT7ool+6FUj/oDQRlMhN2lzjTKNvk4zH65RmsnEu8ZBscm6hlk2WdeQe/2JnAGZ9fNqLdjMxSjYQLlGP+ib/4G3WU5WPqih4g57qjV3JqjFy8oHK0oRj0TQKhIAAAAASUVORK5CYII=) center / 1.6rem no-repeat;animation:laoding 1s  infinite}@keyframes laoding{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", tahoma, arial, simsun, "\5B8B\4F53"
+}
 
-        blockquote {
-            padding: 0.5rem;
-            border-left: 0.3rem solid #ccc;
-            background-color: #f5f5f5;
+*::-webkit-scrollbar {
+    width: 0.4rem;
+    background-color: #F5F5F5
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+    border-radius: 3px
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #34A853
+}
+
+::selection {
+    background-color: #34A853;
+    color: #fff
+}
+html {
+    font-size: 62.5%;
+}
+html, body {
+    height: 100%
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    color: #34A853;
+    text-decoration: none
+}
+
+
+
+header h1, section > h1, section > h2, article > h1 {
+    font-weight: normal
+}
+header {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15rem;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.2rem;
+    background-color: #34A853;
+    border-radius: 0 0 3px 3px;
+    color: #fff;
+    margin: 0;
+}
+
+header h1 a {
+    color: #fff;
+    padding: 1rem;
+    display: block;
+}
+
+header h1 a:hover {
+    color: #f00;
+}
+
+ 
+article {
+    padding: 2rem 0 3rem 0;
+    position: relative;
+    margin: auto;
+    margin-bottom: 2rem;
+    max-width: 1024px
+}
+
+article:before {
+    content: '';
+    position: absolute;
+    background-color: #34A853;
+    width: 5rem;
+    height: .5rem;
+    top: 0;
+    left: 0
+}
+
+ 
+article h1 {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAOVBMVEUAAAAzqFIwr1Azp1Myp1IzqFIwp1AwqlAzqFIzqFM0qFM0p1QzqVMzqVM0qVI0p1IyqFIzqFM0qFMApnj6AAAAEnRSTlMA8BCgYOAgMNCwv0BQX3+AcJCeDccoAAABjklEQVRIx52T0Y6CQBAEZVdUPFGc///YEy5YiXVhXPqRTTtd6fawX2Pd6yz3PnaaT7WLiOMe6881Fp3a8459/KlvznvvYlVtzFsDtSGP19XWCzmthrxCTqoBtZt6ISfV4D0PQs6qwTsFLX9TDbqUc6eWk2rwlgstf1MNquXwVMtJNcGxWwTIeTXo8fr+/tzn1XyukYeaV4O62fvQsDerod45UaDTZjX2FiIZ2dVQ7/w+BKqqZts76b/saqy6eJdZgrxVjRLOsxSyqvE0Fj39g8tXSXDrLI18BOb/aRyYpZHP4LjeRczSLZeaeOdZGlnRXS+zFLKj28ssjUz08DSYpZEd3VjM0m+OzjQ8SyMTXc/M0siOzjQ0QCE7OvVqlkJ2dLzMUsiJmKWRczFLI+fyLI1saZbtyMyyHdmzzJGHwmCakaO7MZhW5Nfz+3ipGbLNHFd0IdvMcUevmZnjjm5kmzlO9Lxl0RFdyMllohs5Zya6kS2dJXo+bJ8lupFt5qyi18Tss0QXsv9VSNE/kH8BI4Nikqp7eZcAAAAASUVORK5CYII=) left / 1.7rem no-repeat;
+    padding-left: 2.2rem;
+    font-size: 3rem;
+    line-height: 1;
+    margin: 1.5rem 0;
+    font-weight: normal;
+}
+
+article h1 a {
+    color: #34A853
+}
+
+article h1 a:hover {
+    color: #34A853;
+    border-bottom: none
+}
+
+.text {
+    margin-bottom: 1.5rem
+}
+
+.time {
+    margin-bottom: 1.5rem
+}
+
+.time time {
+    color: #ccc
+}
+
+.tag a {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAOVBMVEUAAABgYGBlZWVkZGRlZWVlZWVoaGhlZWVlZWVlZWVmZmZlZWVlZWVmZmZmZmZlZWVlZWVmZmZmZmZ6sBHQAAAAEnRSTlMAEPBAwNAgYG/ggD+wUKAwkH8FZY6MAAABaUlEQVRIx9VV25aDIAwkNMhlFW3+/2MXqecMYrzsvnWectKZZBoImq/A4BfmGJkXPzxgv6M0iIGu6XkjOmb3iWy+kARbGdNGIZ9rIhgdxKsHv0/61eFIqh2nFqNUujhS+GtencrsNAU5dD56VRRc+Aa4/TWghgaKIn6XsGIvT3UuhLZgFgldza5fEknNhERiP7OuI+1ahM0h8BJ5dSfYcqJYcycgEdc4yrcCM4oQuk0XgiNrgVYTwEfCOZp7gcFps0TU+akIIuETDY2At8iVCOPugPmxcB8VaALU1Sy9KlZLn4haS//90+nRWGeMFdfkShBwcAOaPbsaxj27fPyn653AwXYAg0UCFHUBdYAB/awSMdO4azkhoYHsYWUyNhBon8XlkDt/yobTxzXO+iMGfq+w72OhRc56U66fG9rl3lbg/4Cprs8Y5s1LYCmImI/+ualwbgtsInMF8oUJsCdzC5rSyAU5TWS+Ab9KpRlNF8N3PQAAAABJRU5ErkJggg==) left / 1.4rem no-repeat;
+    padding-left: 1.7rem;
+    margin-right: 2rem;
+    line-height: 1;
+    text-transform: uppercase
+}
+
+.tag a:hover {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAP1BMVEUAAAAwr1A0qFMzqFI0p1Iwp1A0p1Iyp1IzqFI0qFMzqFIzqVMzp1MwqlAzqFMyqFIzqFMzqFMzqFM0qFI0qFNnmUPVAAAAFHRSTlMAEEDwwCCAYODP0FCgMLBwb6+Qj0rI8toAAAF0SURBVEjH1VXRksMgCJRK1CSmsVf+/1uPs5nBgGfTx+5LHboLWwTrvgJTfCKmhPiM0wV2SNQgFRjT80FcEJfXyeeBpPjKWA8KxFwDxfUB+OchnoMxcfABXTszJ9ttmsBVZujwOb50u7ItPQVw/jv869UqkPlOYL99nCM7+xm0DxJRPAU8+eGtbkxoE/J97SqnqheIQtMh7r/umaoIpxL74VBwI7qpG2w5ibx7JwBubeMovxW4OxFItXUgsKwf1g4E4iPIPbr3AiezgJQkz62iEJXXaWoEeJxmwqbdCr4ZKNQnxkAgeTuW+Cr31wmspc9/dLjU1k3aKmMyEuxycZMUuzYabrk2fPjReAfmqO1QCwR2gcwCWliG6DdF0T1Np5KrCiiANyuT6wYKzLP4o2PqAdXP9AKuo0hb/xETvlb4YBM96eBbRa5/N6D/HcS/wVrX51G2w0tBYiTVH5OwYp7rh3FpJXGhBhgt3WrWcEdGDiu4b8AvjFwbQ8OPzh0AAAAASUVORK5CYII=) left / 1.4rem no-repeat;
+    border-bottom: none;
+    color: #34A853
+}
+
+.loadMask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.loading {
+    line-height: 1;
+    color: #34A853;
+    position: relative;
+}
+
+.loading:before {
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    left: -1.7rem;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAPFBMVEUAAAAwqlAzqFMyqFIwr1Azp1IzqFI0p1IzqVIyqFIwp1A0qVI0p1QzqFM0qFIzqFIzqFI0qFMzqFM0qFPHtw1ZAAAAE3RSTlMAMLBwEODvgFBfIH9A8MDQn8+Q+jSnnwAAAPFJREFUSMftlVcOxCAMROklhZS5/11XS5qC4jh87irvC6GxhY0ZxMtOl2DbGj2+qOcBEzLycQAWNKeTOpi8sMh0jF4BcFnks94aWnuonNli7VqCbOOF+jhHOJ9OGAfEmkolAH9dAtHLEba57hF1W2TtUsF68bs0sZU1+ugAjBX5HTOd0Z37rZFJZIAr0nlkLBmAYj4CmDepyplJANA3gkT7ool+6FUj/oDQRlMhN2lzjTKNvk4zH65RmsnEu8ZBscm6hlk2WdeQe/2JnAGZ9fNqLdjMxSjYQLlGP+ib/4G3WU5WPqih4g57qjV3JqjFy8oHK0oRj0TQKhIAAAAASUVORK5CYII=) center / 1.6rem no-repeat;
+    animation: laoding 1s  infinite
+}
+
+@keyframes laoding {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+
+}
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #000;
+            margin: 1.5rem 0;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        h3 {
+            font-size:1.6rem;
+        }
+        h4 {
+            font-size:1.5rem;
+        }
+        h5, h6 {
+            font-size: 1.4rem
+        }
+        hr {
+            border: 0;
+            height:0.25rem;
+            display: block;
+            background: #e1e4e8;
+            margin: 0.25rem 0
+        }
+        a {
+            color: #0366d6
+        }
+        p {
             line-height: 1.5;
+            font-size: 1.4rem;
+            margin: 1rem 0;
+        }
+        ul, ol {
+            padding-left: 2rem;
+            margin: 1.5rem 0;
+        }
+        li {
+            margin: 1rem 0;
+            font-size: 1.4rem;
+        }
+        blockquote {
+            padding: 0 1rem;
+            border-left: 0.3rem solid #dfe2e5;
+            line-height: 1.5;
+            margin: 1.5rem 0;
+        }
+
+        pre {
+            background-color: #f6f8fa;
+            display: block;
+            border-radius: 3px;
+            margin: 1.5rem 0;
+            line-height: 1.5;
+            font-size: 1.3rem;
+        }
+        pre > code {
+            background: none;
+        }
+        p > code, li > code {
+            font-size: 85%;
+            background-color: rgba(27,31,35,0.05);
+            border-radius: 3px;
         }
 
         code {
@@ -25,23 +255,32 @@
     </style>
 </head>
 <body>
+    <div class="loadMask">
+        <div class="loading">正在加载中...</div>
+    </div>
+    
     <header>
         <h1><a href="https://github.com/wulala/m/issues">wulala</a></h1>
-        <div class="loading">正在加载中...</div>
     </header>
-    <section class="tac">
-        <figure>
-            <a href="https://github.com/wulala"><img src="https://avatars.githubusercontent.com/u/2832873?s=100" alt="avatar"></a>
-            <p>为中华之崛起而读书</p>
-        </figure>
-    </section>
+ 
     
     <section id="content"></section>
 
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@8.4.0/dist/markdown-it.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/styles/xcode.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/highlight.min.js"></script>
+    <style>
+        .hljs {
+            background: none;
+            padding: 1.5rem;
+        }
+    </style>
     <script>
 
         /*!markdown parse | https://github.com/developit/snarkdown */
-        const TAGS={'':['<em>','</em>'],_:['<strong>','</strong>'],'\n':['<br />'],' ':['<br />'],'-':['<hr />']};function outdent(str){return str.replace(RegExp('^'+(str.match(/^(\t| )+/)||'')[0],'gm'),'')}function encodeAttr(str){return(str+'').replace(/"/g,'"').replace(/</g,'<').replace(/>/g,'>')}function parse(md){let tokenizer=/((?:^|\n+)(?:\n---+|\* \*(?: \*)+)\n)|(?:^```(\w*)\n([\s\S]*?)\n```$)|((?:(?:^|\n+)(?:\t|  {2,}).+)+\n*)|((?:(?:^|\n)([>*+-]|\d+\.)\s+.*)+)|(?:\!\[([^\]]*?)\]\(([^\)]+?)\))|(\[)|(\](?:\(([^\)]+?)\))?)|(?:(?:^|\n+)([^\s].*)\n(\-{3,}|={3,})(?:\n+|$))|(?:(?:^|\n+)(#{1,3})\s*(.+)(?:\n+|$))|(?:`([^`].*?)`)|(  \n\n*|\n{2,}|__|\*\*|[_*])/gm,context=[],out='',last=0,links={},chunk,prev,token,inner,t;function tag(token){var desc=TAGS[token.replace(/\*/g,'_')[1]||''],end=context[context.length-1]==token;if(!desc)return token;if(!desc[1])return desc[0];context[end?'pop':'push'](token);return desc[end|0]}function flush(){let str='';while(context.length)str+=tag(context[context.length-1]);return str}md=md.replace(/^\n+|\n+$/g,'').replace(/^\[(.+?)\]:\s*(.+)$/gm,(s,name,url)=>{links[name.toLowerCase()]=url;return''});while((token=tokenizer.exec(md))){prev=md.substring(last,token.index);last=tokenizer.lastIndex;chunk=token[0];if(prev.match(/[^\\](\\\\)*\\$/)){}else if(token[3]||token[4]){chunk='<pre class="code '+(token[4]?'poetry':token[2].toLowerCase())+'">'+outdent(encodeAttr(token[3]||token[4]).replace(/^\n+|\n+$/g,''))+'</pre>'}else if(token[6]){t=token[6];if(t.match(/\./)){token[5]=token[5].replace(/^\d+/gm,'')}inner=parse(outdent(token[5].replace(/^\s*[>*+.-]/gm,'')));if(t==='>')t='blockquote';else{t=t.match(/\./)?'ol':'ul';inner=inner.replace(/^(.*)(\n|$)/gm,'<li>$1</li>')}chunk='<'+t+'>'+inner+'</'+t+'>'}else if(token[8]){chunk=`<img src="${encodeAttr(token[8])}"alt="${encodeAttr(token[7])}">`}else if(token[10]){out=out.replace('<a>',`<a href="${encodeAttr(token[11] || links[prev.toLowerCase()])}">`);chunk=flush()+'</a>'}else if(token[9]){chunk='<a>'}else if(token[12]||token[14]){t='h'+(token[14]?token[14].length:(token[13][0]==='='?1:2));chunk='<'+t+'>'+parse(token[12]||token[15])+'</'+t+'>'}else if(token[16]){chunk='<code>'+encodeAttr(token[16])+'</code>'}else if(token[17]||token[1]){chunk=tag(token[17]||'--')}out+=prev;out+=chunk}return(out+md.substring(last)+flush()).trim()}
+        // const TAGS={'':['<em>','</em>'],_:['<strong>','</strong>'],'\n':['<br />'],' ':['<br />'],'-':['<hr />']};function outdent(str){return str.replace(RegExp('^'+(str.match(/^(\t| )+/)||'')[0],'gm'),'')}function encodeAttr(str){return(str+'').replace(/"/g,'"').replace(/</g,'<').replace(/>/g,'>')}function parse(md){let tokenizer=/((?:^|\n+)(?:\n---+|\* \*(?: \*)+)\n)|(?:^```(\w*)\n([\s\S]*?)\n```$)|((?:(?:^|\n+)(?:\t|  {2,}).+)+\n*)|((?:(?:^|\n)([>*+-]|\d+\.)\s+.*)+)|(?:\!\[([^\]]*?)\]\(([^\)]+?)\))|(\[)|(\](?:\(([^\)]+?)\))?)|(?:(?:^|\n+)([^\s].*)\n(\-{3,}|={3,})(?:\n+|$))|(?:(?:^|\n+)(#{1,3})\s*(.+)(?:\n+|$))|(?:`([^`].*?)`)|(  \n\n*|\n{2,}|__|\*\*|[_*])/gm,context=[],out='',last=0,links={},chunk,prev,token,inner,t;function tag(token){var desc=TAGS[token.replace(/\*/g,'_')[1]||''],end=context[context.length-1]==token;if(!desc)return token;if(!desc[1])return desc[0];context[end?'pop':'push'](token);return desc[end|0]}function flush(){let str='';while(context.length)str+=tag(context[context.length-1]);return str}md=md.replace(/^\n+|\n+$/g,'').replace(/^\[(.+?)\]:\s*(.+)$/gm,(s,name,url)=>{links[name.toLowerCase()]=url;return''});while((token=tokenizer.exec(md))){prev=md.substring(last,token.index);last=tokenizer.lastIndex;chunk=token[0];if(prev.match(/[^\\](\\\\)*\\$/)){}else if(token[3]||token[4]){chunk='<pre class="code '+(token[4]?'poetry':token[2].toLowerCase())+'">'+outdent(encodeAttr(token[3]||token[4]).replace(/^\n+|\n+$/g,''))+'</pre>'}else if(token[6]){t=token[6];if(t.match(/\./)){token[5]=token[5].replace(/^\d+/gm,'')}inner=parse(outdent(token[5].replace(/^\s*[>*+.-]/gm,'')));if(t==='>')t='blockquote';else{t=t.match(/\./)?'ol':'ul';inner=inner.replace(/^(.*)(\n|$)/gm,'<li>$1</li>')}chunk='<'+t+'>'+inner+'</'+t+'>'}else if(token[8]){chunk=`<img src="${encodeAttr(token[8])}"alt="${encodeAttr(token[7])}">`}else if(token[10]){out=out.replace('<a>',`<a href="${encodeAttr(token[11] || links[prev.toLowerCase()])}">`);chunk=flush()+'</a>'}else if(token[9]){chunk='<a>'}else if(token[12]||token[14]){t='h'+(token[14]?token[14].length:(token[13][0]==='='?1:2));chunk='<'+t+'>'+parse(token[12]||token[15])+'</'+t+'>'}else if(token[16]){chunk='<code>'+encodeAttr(token[16])+'</code>'}else if(token[17]||token[1]){chunk=tag(token[17]||'--')}out+=prev;out+=chunk}return(out+md.substring(last)+flush()).trim()}
+        
+        // parse(txt) 
 
 
         /**
@@ -50,7 +289,6 @@
          * @return {[type]}        [description]
          */
         function parseLabels(labels) {
-            console.log(labels)
             let tagDom = ''
             labels.forEach(obj => {
                 tagDom += '<a href="jascript:;">'+ obj.name +'</a>'
@@ -58,20 +296,23 @@
             return tagDom
         }
 
+        let md = window.markdownit()
+
         fetch('https://api.github.com/repos/wulala/m/issues')
             .then(res => res.json())
             .then(data => {
-                document.querySelector('.loading').parentNode.removeChild(document.querySelector('.loading'))
+                document.querySelector('.loadMask').parentNode.removeChild(document.querySelector('.loadMask'))
                 let dom = ''
                 data.forEach(obj => {
                     dom += `<article>
                             <h1>${obj.title}</h1>
-                            <div class="text">${parse(obj.body)}</div>
+                            <div class="text">${md.render(obj.body)}</div>
                             <div class="time"><time>${obj.created_at}</time></div>
                             <div class="tag">${parseLabels(obj.labels)}</div>
                         </article>`
                 })
-                document.querySelector('#content').innerHTML = dom                
+                document.querySelector('#content').innerHTML = dom 
+                setTimeout(() => hljs.initHighlighting(), hljs.initHighlightingOnLoad(), 0)
             })
 
 
