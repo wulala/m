@@ -1,1 +1,1 @@
-[rabc.cc](https://rabc.cc)! AND blog, see [issues](https://github.com/wulala/m/issues)!
+[rabc.cc](https://rabc.cc)! && blog, see [issues](https://github.com/wulala/m/issues)!
